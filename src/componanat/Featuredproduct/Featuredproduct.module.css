@@ -1,0 +1,25 @@
+.btnToAddCard {
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.2s all ease;
+}
+
+.product {
+    /* transition: 0.3s all ease-in; */
+    cursor: pointer;
+}
+
+.product:hover .btnToAddCard {
+    /* display: flex; */
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.hideBlock {
+    display: none;
+}
+
+.product:hover .hideBlock {
+    display: block;
+}

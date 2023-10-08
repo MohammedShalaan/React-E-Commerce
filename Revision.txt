@@ -1,0 +1,10 @@
+context explan:-
+
+props drilling :- نقل الداتا من كومبونتت لكمبوننت 
+
+
+      {/* <div className=" container">
+        <div className=" w-75 d-flex flex-column justify-content-center align-items-center"> */}
+
+      {/* </div>
+      </div> */}
