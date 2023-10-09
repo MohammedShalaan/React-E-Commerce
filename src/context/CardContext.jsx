@@ -8,7 +8,10 @@ export let cardContext = createContext();
 
 function CardContextProvider(propes) {
 
-    let headers = { token: localStorage.getItem('Token') }
+    let [headers, setheaders] = useState({ token: localStorage.getItem('Token') })
+
+    // let headers = { token: localStorage.getItem('Token') }
+    console.log(headers)
     let [countcard, setCountCard] = useState(0)
 
 
@@ -88,7 +91,7 @@ function CardContextProvider(propes) {
 
 
     return (
-        <cardContext.Provider value={{ GetAddToCard, ShowCard, DeleteItem, UpdateCardQuantity, ClearAllProduct, onlinePayment, getCountCard, countcard }}>
+        <cardContext.Provider value={{ GetAddToCard, ShowCard, DeleteItem, UpdateCardQuantity, ClearAllProduct, onlinePayment, getCountCard, countcard, setheaders }}>
             {propes.children}
         </cardContext.Provider>
     )

@@ -66,13 +66,13 @@ function App() {
 
 
   return (
-    <CardContextProvider>
-      <UserContextProvider>
+    <UserContextProvider>
+      <CardContextProvider>
         <CounterContextProvider>
           <RouterProvider router={router}></RouterProvider>
         </CounterContextProvider>
-      </UserContextProvider>
-    </CardContextProvider>
+      </CardContextProvider>
+    </UserContextProvider>
 
 
 

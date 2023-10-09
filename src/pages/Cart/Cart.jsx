@@ -98,9 +98,9 @@ function Cart() {
                 ) : (
                     <div className=" bg-light p-3 px-5 rounded-3">
                         <div className="row  align-items-center">
-                            <div className=" col-10"><h1 className="h3 fw-bold pt-3 pb-2">shopping card detales </h1>
-                                <h4 className=" h6 text-success">Total card price: {data?.totalCartPrice}</h4></div>
-                            <Link to="/Checkout" className="col-2"><button className=" btn btn-success">check out</button></Link>
+                            <div className=" col-10"><h1 className="h3 fw-bold pt-3 pb-2">Shopping Cart </h1>
+                                <h4 className=" h6 text-success">Total Cart Price: {data?.totalCartPrice}</h4></div>
+                            <Link to="/Checkout" className="col-2"><button className=" btn btn-success">Check Out</button></Link>
                         </div>
 
                         <div className="row gap-3">

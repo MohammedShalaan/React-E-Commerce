@@ -7,12 +7,14 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
 import { UserContext } from '../../context/UserContext';
+import { cardContext } from '../../context/CardContext';
 
 
 
 
 function LoginForm() {
 
+    let { setheaders } = useContext(cardContext)
 
     let { setUserToken } = useContext(UserContext)
     let [error, seterror] = useState(null);
@@ -39,11 +41,12 @@ function LoginForm() {
             setSpiner(true)
             navigte('/')
             localStorage.setItem("Token", data.token)
+            setheaders({ token: localStorage.getItem("Token") })
             setUserToken(localStorage.getItem("Token"))
 
         }
 
-        console.log(data)
+        // console.log(data)
 
     }
 

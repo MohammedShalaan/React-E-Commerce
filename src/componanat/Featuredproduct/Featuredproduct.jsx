@@ -16,10 +16,10 @@ function Featuredproduct() {
 
     async function AddToCard(id) {
         let { data } = await GetAddToCard(id)
-        console.log(data)
+        // console.log(data)
 
-        if (data.status == "success") {
-            toast.success(data.message)
+        if (data?.status == "success") {
+            toast.success(data?.message)
             getCountCard()
         }
     }
@@ -39,6 +39,7 @@ function Featuredproduct() {
 
         getProduct()
         getCountCard()
+
 
 
     }, [])
