@@ -52,6 +52,7 @@ function App() {
       { path: "Checkout", element: <ProtectetRouting><Checkout /> </ProtectetRouting> },
       { path: "allorders", element: <ProtectetRouting><allorders /> </ProtectetRouting> },
       { path: "/", element: <ProtectetRouting><Home /> </ProtectetRouting> },
+      { path: "React-E-Commerce", element: <ProtectetRouting><Home /> </ProtectetRouting> },
       { path: "cart", element: <ProtectetRouting><Cart /></ProtectetRouting> },
       { path: "Categores", element: <ProtectetRouting><Categores /></ProtectetRouting> },
       { path: "Brands", element: <ProtectetRouting><Brands /></ProtectetRouting> },
